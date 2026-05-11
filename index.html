@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Főoldal</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e1e1e, #2f2f2f);
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255,255,255,0.05);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    button {
+      padding: 15px 35px;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.2s;
+      color: white;
+      font-weight: bold;
+    }
+
+    .carfix {
+      background: #007bff;
+    }
+
+    .barber {
+      background: #ff9800;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Válassz oldalt</h1>
+
+    <div class="buttons">
+      <button class="carfix" onclick="window.location.href='carfix/index.html'">
+        CarFix
+      </button>
+
+      <button class="barber" onclick="window.location.href='barber/index.html'">
+        Barber
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
